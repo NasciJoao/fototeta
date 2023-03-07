@@ -1,0 +1,55 @@
+<DOCTYPE! html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: -webkit-linear-gradient( #fab3fa, #ec09b3);
+        }
+
+        #caixa_texto {
+            padding: 90px;
+            background-image: url(https://thumb-lvlt.xhcdn.com/a/YYiOQs6z1jMjPolK3Yhutw/012/393/966/1280x720.1.jpg);
+            background-size: 100%;
+            border-radius: 20px;
+        }
+
+        input {
+            border-radius: 10PX;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="caixa_texto">
+        <h1><strong>por favor manda um peitinho hoje</strong></h1>
+        <p> insira sua resposta</p>
+        <input type="text" name="txtv" id="txtv">
+        <input type="button"  value="verificar" onclick="verificar()">
+        <div id="res"></div>
+    </div>
+    <script>
+        
+
+        function verificar () {
+            var txtv = document.getElementById ('txtv')
+            var res = document.getElementById ('res')
+            var sim = String (txtv.value)
+            if (sim == 'sim'){
+             window.prompt ('muito obrigado, vc é muito boa, aguardo')
+            }
+            else {
+                res.innerHTML = 'resposta invalida, tente novamente'
+            }
+    }
+    </script>
+</body>
+</html>
